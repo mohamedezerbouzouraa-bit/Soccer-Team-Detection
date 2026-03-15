@@ -1,0 +1,3 @@
+data/sample_images/   (mettre vos images ici)
+models/               (mettre yolov8n.pt ici)
+outputs/annotated_images/   (les résultats seront enregistrés ici)

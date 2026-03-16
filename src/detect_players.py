@@ -43,9 +43,4 @@ for box in results[0].boxes:
         cv2.rectangle(img,(x1,y1-h_text-10),(x1+w_text,y1),color,-1)
         cv2.putText(img,text,(x1,y1-5),cv2.FONT_HERSHEY_SIMPLEX,0.6,(0,0,0),2)
 
-print("Blue Team Players:", blue_count)
-print("White Team Players:", white_count)
 
-os.makedirs("outputs/annotated_images", exist_ok=True)
-cv2.imwrite(f"outputs/annotated_images/{image_path}", img)
-cv2_imshow(img)

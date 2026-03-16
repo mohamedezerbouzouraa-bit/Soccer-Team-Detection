@@ -29,6 +29,7 @@ for box in results[0].boxes:
             continue
         torso = extract_torso(player)
         ratio = detect_blue_ratio(torso)
+        
         if ratio > 0.1:
             team = "Blue"
             color = (255,0,0)

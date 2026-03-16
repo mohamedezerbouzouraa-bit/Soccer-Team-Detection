@@ -8,4 +8,5 @@ def extract_torso(player_img):
     v_end = int(h * TORSO_VERTICAL_RATIO[1])
     h_start = int(w * TORSO_HORIZONTAL_RATIO[0])
     h_end = int(w * TORSO_HORIZONTAL_RATIO[1])
+    
     return player_img[v_start:v_end, h_start:h_end]

@@ -1,3 +1,4 @@
+
 def detect_blue_ratio(torso_img):
     hsv = cv2.cvtColor(torso_img, cv2.COLOR_BGR2HSV)
     lower_blue = np.array(BLUE_LOWER)

@@ -39,6 +39,7 @@ for box in results[0].boxes:
             team = "White"
             color = (255,255,255)
             white_count += 1
+            
         text = f"{team} | {score:.2f}"
         cv2.rectangle(img,(x1,y1),(x2,y2),color,2)
         (w_text,h_text),_ = cv2.getTextSize(text, cv2.FONT_HERSHEY_SIMPLEX,0.6,2)

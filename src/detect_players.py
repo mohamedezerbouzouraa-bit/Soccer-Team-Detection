@@ -12,7 +12,6 @@ img = cv2.imread(image_path)
 
 model = YOLO("models/yolov8n.pt")
 results = model(img)
-
 blue_count = 0
 white_count = 0
 
